@@ -1,0 +1,14 @@
+en:
+  users:
+    index:
+      user: "Users List"
+      name: "Name"
+      email: "Email"
+      show: "Show"
+      edit: "Edit"
+      destroy: "Destroy"
+      new_user: "New User"
+      date: "Create date"
+      eng: "English"
+      vie: "Vietnamese"
+      back: "Back to Users List"
