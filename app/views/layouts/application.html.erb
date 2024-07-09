@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <%= link_to t("users.index.eng"), locale:"en" %>
-    <%= link_to t("users.index.vie"), locale:"vi" %>
     <title>RailsTutorial</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -13,6 +11,8 @@
   </head>
 
   <body>
+    <%= link_to t("users.index.eng"), locale: :en %>
+    <%= link_to t("users.index.vie"), locale: :vi %>
     <%= yield %>
   </body>
 </html>
