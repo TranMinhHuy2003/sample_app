@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= t(yield(:title)) %></title>
+    <title><%= full_title yield :title %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "custom", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body data-locale="<%= I18n.locale %>">
+    <%= render "layouts/header" %>
     <%= link_to t("users.index.eng"), locale: :en %>
     <%= link_to t("users.index.vie"), locale: :vi %>
-    <%= yield %>
+    <div class="container">
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+      <%= yield %>
+    </div>
   </body>
 </html>
