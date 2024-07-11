@@ -34,6 +34,10 @@ vi:
   activerecord:
     sign_up: "Đăng ký"
     login: "Đăng nhập"
+    forgot_password: "(quên mật khẩu)"
+    forgot_password_title: "Quên mật khẩu"
+    reset_password: "Đặt lại mật khẩu"
+    submit: "Gửi"
     please_log_in: "Xin hãy đăng nhập"
     can_not_edit_account: "Bạn không thể chỉnh sửa tài khoản này"
     new_user?: "Người dùng mới?"
@@ -75,8 +79,21 @@ vi:
     not_activated: "Tài khoản chưa được kích hoạt. Kiểm tra email để nhận link kích hoạt."
     invalid_activation_link: "Liên kết kích hoạt không hợp lệ"
 
+  password_reset:
+    subject: "Đặt lại mật khẩu"
+    click: "Nhấn vào liên kết bên dưới để đặt lại mật khẩu:"
+    expire: "Liên kết này sẽ hết hạn trong 2 tiếng nữa."
+    ignore: "Nếu bạn không yêu cầu đặt lại mật khẩu, hãy bỏ qua email này và mật khẩu của bạn sẽ không bị thay đổi."
+    update_password: "Cập nhật mật khẩu"
+    empty_error: "Không được để trống mật khẩu."
+
   flash:
     user_create_success: "Tạo tài khoản thành công"
     user_not_found: "Không tìm thấy người dùng!"
     invalid_email_password_combination: "Email hoặc mật khẩu không hợp lệ"
     profile_update_success: "Chỉnh sửa hồ sơ thành công"
+    reset_password: "Đã gửi email với hướng dẫn đặt lại mật khẩu"
+    email_not_found: "Không tìm thấy địa chỉ email"
+    inactive_user: "Tài khoản chưa được kích hoạt!"
+    reset_password_expired: "Hết thời gian đặt lại mật khẩu."
+    reset_password_successfully: "Đặt lại mật khẩu thành công"

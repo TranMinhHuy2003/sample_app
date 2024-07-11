@@ -1,5 +1,19 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
+
+  PERMITTED_ATTRIBUTES = %i(name email password password_confirmation).freeze
+  before_save :downcase_email
+  before_create :create_activation_digest
+
+  validates :name, presence: true, length: {maximum: Settings.max_length_name}
+  validates :email, presence: true,
+    length: {maximum: Settings.max_length_email},
+    format: {with: Regexp.new(Settings.valid_email_regex)},
+    uniqueness: true
+  validates :password, presence: true,
+    length: {minimum: Settings.min_length_password}, allow_nil: true
+
+  has_secure_password
 
   scope :order_by_name, ->{order :name}
 
@@ -34,29 +48,27 @@ class User < ApplicationRecord
     BCrypt::Password.new(digest).is_password? token
   end
 
-  # Activates an account.
   def activate
     update_columns activated: true, activated_at: Time.zone.now
   end
 
-  # Sends activation email.
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
   end
 
-  PERMITTED_ATTRIBUTES = %i(name email password password_confirmation).freeze
-  before_save :downcase_email
-  before_create :create_activation_digest
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_columns reset_digest: User.digest(reset_token),
+                   reset_sent_at: Time.zone.now
+  end
 
-  validates :name, presence: true, length: {maximum: Settings.max_length_name}
-  validates :email, presence: true,
-    length: {maximum: Settings.max_length_email},
-    format: {with: Regexp.new(Settings.valid_email_regex)},
-    uniqueness: true
-  validates :password, presence: true,
-    length: {minimum: Settings.min_length_password}, allow_nil: true
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
 
-  has_secure_password
+  def password_reset_expired?
+    reset_sent_at < Settings.reset_password_expired_hours.hours.ago
+  end
 
   private
 
