@@ -51,6 +51,8 @@ vi:
       session:
         email: "Email"
         password: "Mật khẩu"
+        remember_me: "Nhớ tôi"
+        remember: "Nhớ tôi trên máy tính này"
 
   flash:
     user_create_success: "Tạo tài khoản thành công"

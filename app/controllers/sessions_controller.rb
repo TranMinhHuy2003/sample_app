@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
     user = User.find_by email: params.dig(:session, :email)&.downcase
     if user&.authenticate params.dig(:session, :password)
       log_in user
+      params.dig(:session, :remember_me) == "1" ? remember(user) : forget(user)
       redirect_to user
     else
       flash.now[:danger] = t("flash.invalid_email_password_combination")

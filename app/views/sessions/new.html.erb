@@ -7,6 +7,10 @@
       <%= f.email_field :email, class: "form-control" %>
       <%= f.label t("activerecord.attributes.session.password") %>
       <%= f.password_field :password, class: "form-control"  %>
+      <%= f.label t("activerecord.attributes.session.remember_me"), class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+        <span><%= t("activerecord.attributes.session.remember") %></span>
+      <% end %>
       <%= f.submit t("activerecord.login"), class: "btn btn-primary" %>
     <% end %>
     <p>
