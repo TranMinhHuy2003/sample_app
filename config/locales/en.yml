@@ -16,6 +16,11 @@ en:
       back: "Back to Users List"
 
   static_pages:
+    account: "Account"
+    profile: "Profile"
+    users: "Users"
+    settings: "Settings"
+    log_out: "Log out"
     home:
       heading: "Home"
       intro_html: "This is the home page for the
@@ -30,18 +35,25 @@ en:
   activerecord:
     sign_up: "Sign up"
     login: "Log in"
+    new_user?: "New user?"
+    sign_up_now: "Sign up now!"
     create_my_acccount: "Create my account"
     the_form_contains: "The form contains"
     error: "errors"
     models:
       user: "User"
+      session: "Session"
     attributes:
       user:
         name: "Name"
         email: "Email"
         password: "Password"
         password_confirmation: "Confirmation"
+      session:
+        email: "Email"
+        password: "Password"
 
   flash:
     user_create_success: "User created successfully"
     user_not_found: "Not found user!"
+    invalid_email_password_combination: "Email or Password is invalid"
