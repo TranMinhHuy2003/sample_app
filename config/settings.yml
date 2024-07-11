@@ -4,3 +4,6 @@ max_length_email: 255
 min_length_password: 8
 rails_tutorial: http://www.railstutorial.org/
 rails_tutorial_help: http://www.railstutorial.org/help
+items_per_page: 10
+gravatar_size: 80
+email_server: http://gravatar.com/emails

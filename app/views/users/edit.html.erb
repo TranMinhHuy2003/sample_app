@@ -1,0 +1,12 @@
+<% provide :title, t("activerecord.update_profile") %>
+<% provide :button_text, t("activerecord.save_changes") %>
+<h1><%= t "activerecord.update_profile" %></h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= render "form" %>
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <%= link_to t("activerecord.change"), Settings.email_server, target: "_blank" %>
+    </div>
+  </div>
+</div>
