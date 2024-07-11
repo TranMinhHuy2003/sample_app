@@ -66,6 +66,16 @@ en:
         remember_me: "Remember me"
         remember: "Remember me on this computer"
 
+  active_mail:
+    subject: "Account activation"
+    hi: "Hi"
+    welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+    check_email: "Please check your email to activate your account."
+    activate: "Activate"
+    activated: "Account activated!"
+    not_activated: "Account not activated. Check your email for the activation link."
+    invalid_activation_link: "Invalid activation link"
+
   flash:
     user_create_success: "User created successfully"
     user_not_found: "Not found user!"

@@ -65,6 +65,16 @@ vi:
         remember_me: "Nhớ tôi"
         remember: "Nhớ tôi trên máy tính này"
 
+  active_mail:
+    subject: "Kích hoạt tài khoản"
+    hi: "Xin chào"
+    welcome: "Chào mừng đến với Ứng dụng mẫu! Nhấn vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+    check_email: "Hãy kiểm tra email để kích hoạt tài khoản của bạn."
+    activate: "Kích hoạt"
+    activated: "Kích hoạt tài khoản thành công!"
+    not_activated: "Tài khoản chưa được kích hoạt. Kiểm tra email để nhận link kích hoạt."
+    invalid_activation_link: "Liên kết kích hoạt không hợp lệ"
+
   flash:
     user_create_success: "Tạo tài khoản thành công"
     user_not_found: "Không tìm thấy người dùng!"
