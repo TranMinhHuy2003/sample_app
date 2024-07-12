@@ -1,4 +1,6 @@
 vi:
+  sample_app: "Ứng dụng mẫu Ruby on Rails Tutorial"
+
   users:
     index:
       user: "Danh sách người dùng"
@@ -12,3 +14,33 @@ vi:
       eng: "Tiếng Anh"
       vie: "Tiếng Việt"
       back: "Trở về danh sách người dùng"
+
+  static_pages:
+    home:
+      heading: "Trang chủ"
+      intro_html: "Đây là trang chủ của ứng dụng mẫu
+                  <a href=%{source}>Ruby on Rails Tutorial</a>."
+    help:
+      heading: "Trợ giúp"
+      intro_html: "Nhận trợ giúp trên
+                  <a href=%{source}>Ruby on Rails Tutorial</a>
+                  tại trang Trợ giúp của Rails Tutorial."
+
+  activerecord:
+    sign_up: "Đăng ký"
+    login: "Đăng nhập"
+    create_my_acccount: "Tạo tài khoản"
+    the_form_contains: "Form chứa"
+    error: "lỗi"
+    models:
+      user: "Người dùng"
+    attributes:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật Khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+
+  flash:
+    user_create_success: "Tạo tài khoản thành công"
+    user_not_found: "Không tìm thấy người dùng!"

@@ -1,4 +1,6 @@
 en:
+  sample_app: "Ruby on Rails Tutorial Sample App"
+
   users:
     index:
       user: "Users List"
@@ -12,3 +14,34 @@ en:
       eng: "English"
       vie: "Vietnamese"
       back: "Back to Users List"
+
+  static_pages:
+    home:
+      heading: "Home"
+      intro_html: "This is the home page for the
+                  <a href=%{source}>Ruby on Rails Tutorial</a>
+                  sample application."
+    help:
+      heading: "Help"
+      intro_html: "Get help on the
+                  <a href=%{source}>Ruby on Rails Tutorial</a>
+                  at the Rails Tutorial help page."
+
+  activerecord:
+    sign_up: "Sign up"
+    login: "Log in"
+    create_my_acccount: "Create my account"
+    the_form_contains: "The form contains"
+    error: "errors"
+    models:
+      user: "User"
+    attributes:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Confirmation"
+
+  flash:
+    user_create_success: "User created successfully"
+    user_not_found: "Not found user!"
