@@ -52,6 +52,8 @@ en:
       session:
         email: "Email"
         password: "Password"
+        remember_me: "Remember me"
+        remember: "Remember me on this computer"
 
   flash:
     user_create_success: "User created successfully"
