@@ -16,6 +16,11 @@ vi:
       back: "Trở về danh sách người dùng"
 
   static_pages:
+    account: "Tài khoản"
+    profile: "Hồ sơ"
+    users: "Người dùng"
+    settings: "Cài đặt"
+    log_out: "Đăng xuất"
     home:
       heading: "Trang chủ"
       intro_html: "Đây là trang chủ của ứng dụng mẫu
@@ -29,18 +34,25 @@ vi:
   activerecord:
     sign_up: "Đăng ký"
     login: "Đăng nhập"
+    new_user?: "Người dùng mới?"
+    sign_up_now: "Đăng ký ngay!"
     create_my_acccount: "Tạo tài khoản"
     the_form_contains: "Form chứa"
     error: "lỗi"
     models:
       user: "Người dùng"
+      session: "Phiên hoạt động"
     attributes:
       user:
         name: "Tên"
         email: "Email"
         password: "Mật Khẩu"
         password_confirmation: "Xác nhận mật khẩu"
+      session:
+        email: "Email"
+        password: "Mật khẩu"
 
   flash:
     user_create_success: "Tạo tài khoản thành công"
     user_not_found: "Không tìm thấy người dùng!"
+    invalid_email_password_combination: "Email hoặc mật khẩu không hợp lệ"
