@@ -1,0 +1,7 @@
+<li>
+  <%= gravatar_for user, size: Settings.gravatar_size %>
+  <%= link_to user.name, user %>
+  <% if can_destroy_user? user %>
+  | <%= link_to t("activerecord.delete"), user, data: { "turbo-method": :delete, turbo_confirm: t("activerecord.you_sure?")} %>
+  <% end %>
+</li>

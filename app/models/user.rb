@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   attr_accessor :remember_token
 
+  scope :order_by_name, ->{order :name}
+
   class << self
     def digest string
       cost = if ActiveModel::SecurePassword.min_cost
@@ -38,7 +40,7 @@ class User < ApplicationRecord
     format: {with: Regexp.new(Settings.valid_email_regex)},
     uniqueness: true
   validates :password, presence: true,
-    length: {minimum: Settings.min_length_password}
+    length: {minimum: Settings.min_length_password}, allow_nil: true
 
   has_secure_password
 
