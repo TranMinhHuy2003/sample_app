@@ -7,3 +7,4 @@ rails_tutorial_help: http://www.railstutorial.org/help
 items_per_page: 10
 gravatar_size: 80
 email_server: http://gravatar.com/emails
+mail_from: noreply@example.com
