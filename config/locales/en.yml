@@ -35,6 +35,10 @@ en:
   activerecord:
     sign_up: "Sign up"
     login: "Log in"
+    forgot_password: "(forgot password)"
+    forgot_password_title: "Forgot password"
+    reset_password: "Reset password"
+    submit: "Submit"
     please_log_in: "Please log in"
     can_not_edit_account: "You cannot edit this account"
     new_user?: "New user?"
@@ -76,8 +80,21 @@ en:
     not_activated: "Account not activated. Check your email for the activation link."
     invalid_activation_link: "Invalid activation link"
 
+  password_reset:
+    subject: "Password reset"
+    click: "To reset your password click the link below:"
+    expire: "This link will expire in two hours."
+    ignore: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+    update_password: "Update password"
+    empty_error: "Password must not be empty."
+
   flash:
     user_create_success: "User created successfully"
     user_not_found: "Not found user!"
     invalid_email_password_combination: "Email or Password is invalid"
     profile_update_success: "Profile updated successfully"
+    reset_password: "Email sent with password reset instructions"
+    email_not_found: "Email address not found"
+    inactive_user: "User is in_actived!"
+    reset_password_expired: "Password reset has expired."
+    reset_password_successfully: "Reset password successfully"
