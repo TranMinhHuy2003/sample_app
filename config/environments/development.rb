@@ -71,4 +71,6 @@ Rails.application.configure do
     authentication: :login,
     enable_starttls_auto: true
   }
+
+  config.middleware.use I18n::JS::Middleware
 end

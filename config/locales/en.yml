@@ -88,6 +88,20 @@ en:
     update_password: "Update password"
     empty_error: "Password must not be empty."
 
+  micropost:
+    post: "Posted"
+    ago: "ago"
+    view_my_profile: "view my profile"
+    title: "Microposts"
+    compose: "Compose new micropost..."
+    post: "Post"
+    feed: "Micropost Feed"
+    delete: "delete"
+    sure?: "You sure?"
+    img_valid_format: "must be a valid image format"
+    img_valid_size: "should be less than 5MB"
+    img_alert: "Maximum file size is 5MB. Please choose a smaller file."
+
   flash:
     user_create_success: "User created successfully"
     user_not_found: "Not found user!"
@@ -98,3 +112,7 @@ en:
     inactive_user: "User is in_actived!"
     reset_password_expired: "Password reset has expired."
     reset_password_successfully: "Reset password successfully"
+    micropost_created_success: "Micropost created"
+    micropost_deleted_success: "Micropost deleted"
+    micropost_deleted_fail: "Micropost deleted fail"
+    micropost_invalid: "Micropost invalid"
