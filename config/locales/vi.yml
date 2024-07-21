@@ -87,6 +87,20 @@ vi:
     update_password: "Cập nhật mật khẩu"
     empty_error: "Không được để trống mật khẩu."
 
+  micropost:
+    post: "Đã đăng"
+    ago: "trước"
+    view_my_profile: "xem hồ sơ của tôi"
+    title: "Bài viết"
+    compose: "Viết bài mới..."
+    post: "Đăng"
+    feed: "Bảng tin"
+    delete: "xóa"
+    sure?: "Bạn chắc chứ?"
+    img_valid_format: "phải là định dạng hình ảnh hợp lệ"
+    img_valid_size: "nên nhỏ hơn 5MB"
+    img_alert: "Kích thước file tối đa là 5MB. Hãy chọn một file nhỏ hơn."
+
   flash:
     user_create_success: "Tạo tài khoản thành công"
     user_not_found: "Không tìm thấy người dùng!"
@@ -97,3 +111,7 @@ vi:
     inactive_user: "Tài khoản chưa được kích hoạt!"
     reset_password_expired: "Hết thời gian đặt lại mật khẩu."
     reset_password_successfully: "Đặt lại mật khẩu thành công"
+    micropost_created_success: "Tạo bài viết thành công"
+    micropost_deleted_success: "Xóa bài viết thành công"
+    micropost_deleted_fail: "Xóa bài viết thất bại"
+    micropost_invalid: "Bài viết không hợp lệ"

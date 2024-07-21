@@ -8,7 +8,9 @@ class UsersController < ApplicationController
     @pagy, @users = pagy User.order_by_name, items: Settings.items_per_page
   end
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy @user.microposts, items: Settings.items_per_page
+  end
 
   def new
     @user = User.new
@@ -59,14 +61,6 @@ class UsersController < ApplicationController
 
     flash[:warning] = t "flash.user_not_found"
     redirect_to root_path
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "activerecord.please_log_in"
-    redirect_to login_url
   end
 
   def correct_user

@@ -42,3 +42,6 @@ config/application.yml
 
 # Ignore folder test
 test/
+
+# Ignore uploaded test images.
+/storage

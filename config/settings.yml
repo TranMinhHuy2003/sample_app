@@ -5,7 +5,12 @@ min_length_password: 8
 rails_tutorial: http://www.railstutorial.org/
 rails_tutorial_help: http://www.railstutorial.org/help
 items_per_page: 10
-gravatar_size: 80
+gravatar_size: 50
 email_server: http://gravatar.com/emails
 mail_from: noreply@example.com
 reset_password_expired_hours: 2
+digit_140: 140
+digit_50: 50
+digit_500: 500
+image_types: ["image/jpeg", "image/gif", "image/png"]
+image_size: 5
