@@ -101,6 +101,14 @@ vi:
     img_valid_size: "nên nhỏ hơn 5MB"
     img_alert: "Kích thước file tối đa là 5MB. Hãy chọn một file nhỏ hơn."
 
+  follow:
+    following_title: "Đang theo dõi"
+    followers_title: "Người theo dõi"
+    following: "đang theo dõi"
+    followers: "người theo dõi"
+    follow_button: "Theo dõi"
+    unfollow_button: "Hủy theo dõi"
+
   flash:
     user_create_success: "Tạo tài khoản thành công"
     user_not_found: "Không tìm thấy người dùng!"
@@ -115,3 +123,4 @@ vi:
     micropost_deleted_success: "Xóa bài viết thành công"
     micropost_deleted_fail: "Xóa bài viết thất bại"
     micropost_invalid: "Bài viết không hợp lệ"
+    relationship_not_found: "Không tìm thấy mối quan hệ!"

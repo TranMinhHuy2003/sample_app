@@ -6,6 +6,7 @@ rails_tutorial: http://www.railstutorial.org/
 rails_tutorial_help: http://www.railstutorial.org/help
 items_per_page: 10
 gravatar_size: 50
+show_follow_gravatar_size: 30
 email_server: http://gravatar.com/emails
 mail_from: noreply@example.com
 reset_password_expired_hours: 2

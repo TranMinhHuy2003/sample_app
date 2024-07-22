@@ -102,6 +102,14 @@ en:
     img_valid_size: "should be less than 5MB"
     img_alert: "Maximum file size is 5MB. Please choose a smaller file."
 
+  follow:
+    following_title: "Following"
+    followers_title: "Followers"
+    following: "following"
+    followers: "followers"
+    follow_button: "Follow"
+    unfollow_button: "Unfollow"
+
   flash:
     user_create_success: "User created successfully"
     user_not_found: "Not found user!"
@@ -116,3 +124,4 @@ en:
     micropost_deleted_success: "Micropost deleted"
     micropost_deleted_fail: "Micropost deleted fail"
     micropost_invalid: "Micropost invalid"
+    relationship_not_found: "Not found relationship!"
